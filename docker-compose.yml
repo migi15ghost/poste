@@ -6,9 +6,10 @@ services:
     image: analogic/poste.io
     restart: always
     network_mode: "host"
+    ports:
+      - "3001:80"
     expose:
       - 25
-      - 80
       - 443
       - 110
       - 143
